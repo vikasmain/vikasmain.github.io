@@ -5,14 +5,12 @@
 <style>
 body {font-family: Arial;}
 
-/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
   float: left;
@@ -24,17 +22,14 @@ body {font-family: Arial;}
   font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -45,27 +40,26 @@ body {font-family: Arial;}
 </head>
 <body>
 
-<h2>Tabs</h2>
-<p>Click on the buttons inside the tabbed menu:</p>
+<h2 style="text-align:center">Vikas Bajpayee</h2>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>I am a very passionate techie with an aim to embrace technology, imbibe every bit of it, transcend all the barriers and turn ideas into reality. My experience spans across Edtech, Fintech and logistics sectors where I have developed things from scratch taking them to a level where they have scaled drastically and have become a brand in their respective domains.</p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
+<div id="Experience" class="tabcontent">
+  <h3>Experience</h3>
   <p>Paris is the capital of France.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
+<div id="Projects" class="tabcontent">
+  <h3>Projects</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
