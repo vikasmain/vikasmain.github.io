@@ -43,7 +43,7 @@ body {font-family: Arial;}
 <h2 style="text-align:center">Vikas Bajpayee</h2>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
   <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
   <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
 </div>
@@ -51,7 +51,36 @@ body {font-family: Arial;}
 <div id="About" class="tabcontent">
   <h3>About</h3>
   <p>I am a very passionate techie with an aim to embrace technology, imbibe every bit of it, transcend all the barriers and turn ideas into reality. My experience spans across Edtech, Fintech and logistics sectors where I have developed things from scratch taking them to a level where they have scaled drastically and have become a brand in their respective domains.</p>
-</div>
+<div class="row">
+    <div class="col-sm-3">
+    <p style="color:darkslategrey;margin-left:5px;">
+	<i class="fa fa-github" align="left" style="margin-left:3px;margin-right:3px;margin-bottom:3px;"></i>
+      <a href="https://github.com/vikasmain" style="color:darkslategrey">vikasmain</a>
+	    </p>
+    </div>
+    <div class="col-sm-3">
+    <p style="color:darkslategrey;margin-left:5px;">
+      <i class="fa fa-google" align="left" style="margin-left:3px;margin-right:3px;margin-bottom:3px;"></i>
+      vikpichai@gmail.com
+    </p>
+
+    </div>
+    <div class="col-sm-3">
+    <p style="color:darkslategrey;margin-left:5px;">
+      <i class="fa fa-whatsapp" align="left" style="margin-left:3px;margin-right:3px;margin-bottom:3px;"></i>
+      +91-8851535549
+    </p>
+
+    </div>
+	 <div class="col-sm-3">
+    <p style="color:darkslategrey;margin-left:5px;">
+      <i class="fa fa-skype" align="left" style="margin-left:3px;margin-right:3px;margin-bottom:3px;"></i>
+     vikasbajpayee783
+    </p>
+
+    </div>
+  </div>
+  </div>
 
 <div id="Experience" class="tabcontent">
   <h3>Experience</h3>
@@ -77,6 +106,8 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+  document.getElementById("defaultOpen").click();
+
 </script>
    
 </body>
